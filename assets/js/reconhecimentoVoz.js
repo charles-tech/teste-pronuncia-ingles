@@ -20,7 +20,7 @@ function onSpeak(e) {
   if (frase === chute) {
     resposta.innerHTML = `<br><br><span class="box-resposta">Certa a Pronuncia<?span>`;
   } else {
-    resposta.innerHTML = `<br><br><span class="box-resposta">Incorreto. Tente Novamente.<?span>`;
+    resposta.innerHTML = `<br><br><span class="box-resposta-incorreto">Incorreto. Tente Novamente.<?span>`;
   }
 
   exibeChutenaTela(chute);

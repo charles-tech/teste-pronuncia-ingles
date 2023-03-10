@@ -5,6 +5,7 @@
   --bg-color: #0aa1dd;
   --primary-color: #e8f9fd;
   --primary-certo: #33db33;
+  --primary-incorreto: #f30e0e;
 }
 
 body {
@@ -39,6 +40,9 @@ span {
 }
 .box-resposta {
   color: var(--primary-certo);
+}
+.box-resposta-incorreto {
+  color: var(--primary-incorreto);
 }
 .vcDisse {
   font-size: 2em;
