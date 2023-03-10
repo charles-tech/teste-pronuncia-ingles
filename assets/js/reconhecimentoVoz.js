@@ -2,6 +2,7 @@ const frase = "I speak English";
 frase.toUpperCase;
 
 const elementoChute = document.getElementById("chute");
+const resposta = document.getElementById("resposta");
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
@@ -17,9 +18,9 @@ function onSpeak(e) {
   console.log(frase);
 
   if (frase === chute) {
-    alert("O Miserável é um Gênio ");
+    resposta.innerHTML = `<br><br><span class="box-resposta">Certa a Pronuncia<?span>`;
   } else {
-    alert("errou, da zero para ele");
+    resposta.innerHTML = `<br><br><span class="box-resposta">Incorreto. Tente Novamente.<?span>`;
   }
 
   exibeChutenaTela(chute);

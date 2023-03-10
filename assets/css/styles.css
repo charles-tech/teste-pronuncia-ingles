@@ -4,6 +4,7 @@
   --font-family: "Montserrat", sans-serif;
   --bg-color: #0aa1dd;
   --primary-color: #e8f9fd;
+  --primary-certo: #33db33;
 }
 
 body {
@@ -35,6 +36,9 @@ span {
   font-size: 4em;
   padding: 30px;
   color: var();
+}
+.box-resposta {
+  color: var(--primary-certo);
 }
 .vcDisse {
   font-size: 2em;
