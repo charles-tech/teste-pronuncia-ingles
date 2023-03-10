@@ -18,9 +18,11 @@ function onSpeak(e) {
   console.log(frase);
 
   if (frase === chute) {
-    resposta.innerHTML = `<br><br><span class="box-resposta">Certa a Pronuncia<?span>`;
+    resposta.innerHTML = `<br><br><span class="box-resposta">Certa a Pronuncia<?span>
+    <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>`;
   } else {
-    resposta.innerHTML = `<br><br><span class="box-resposta-incorreto">Incorreto. Tente Novamente.<?span>`;
+    resposta.innerHTML = `<br><br><span class="box-resposta-incorreto">Incorreto. Tente Novamente.<?span>
+    <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>`;
   }
 
   exibeChutenaTela(chute);
@@ -31,3 +33,9 @@ function exibeChutenaTela(chute) {
     <div class="vcDisse">Você disse</div>
     <span class="box">${chute}<?span>`;
 }
+
+document.body.addEventListener("click", (e) => {
+  if (e.target.id == "jogar-novamente") {
+    window.location.reload();
+  }
+});
