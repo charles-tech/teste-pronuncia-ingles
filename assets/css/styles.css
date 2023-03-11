@@ -36,7 +36,7 @@ h2 {
 span {
   font-size: 4em;
   padding: 30px;
-  color: var();
+  color: var(--primary-color);
 }
 .box-resposta {
   color: var(--primary-certo);
@@ -54,4 +54,10 @@ span {
   background: var(--primary-color);
   border-radius: 5px;
   margin-top: 20px;
+}
+
+.box-pergunta {
+  font-size: 2em;
+  padding: 30px;
+  color: var(--primary-color);
 }
