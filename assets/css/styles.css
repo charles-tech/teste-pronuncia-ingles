@@ -66,13 +66,20 @@ span {
   color: var(--primary-color);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 372px) {
   .box-resposta-incorreto {
-    width: 500px;
-    height: 250px;
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-    color: red;
+    color: rgb(255, 0, 0);
+  }
+}
+
+@media (max-width: 372px) {
+  #variasFrasesIngles {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 0, 0);
   }
 }
