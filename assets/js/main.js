@@ -56,7 +56,9 @@ document.body.addEventListener("click", (e) => {
 
       if (frase === chute) {
         resposta.innerHTML = `<br><br><span class="box-resposta">Certa a Pronuncia<?span>
+        
     <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>`;
+        contador += 1;
       } else {
         resposta.innerHTML = `<br><br><span class="box-resposta-incorreto">Incorreto. Tente Novamente.<?span>
     <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>`;

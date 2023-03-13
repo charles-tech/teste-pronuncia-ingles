@@ -4,15 +4,18 @@
   --font-family: "Montserrat", sans-serif;
   --bg-color: #0aa1dd;
   --primary-color: #e8f9fd;
-  --primary-certo: #33db33;
+  --primary-certo: #021e02;
   --primary-incorreto: #f30e0e;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--bg-color);
   color: var(--primary-color);
   min-height: 80vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -40,6 +43,7 @@ span {
 }
 .box-resposta {
   color: var(--primary-certo);
+  font-weight: bold;
 }
 .box-resposta-incorreto {
   color: var(--primary-incorreto);
