@@ -68,10 +68,11 @@ span {
 
 @media (max-width: 372px) {
   .box-resposta-incorreto {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 30);
   }
 }
 
@@ -80,6 +81,5 @@ span {
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-    color: rgb(255, 0, 0);
   }
 }
