@@ -4,14 +4,18 @@
   --font-family: "Montserrat", sans-serif;
   --bg-color: #0aa1dd;
   --primary-color: #e8f9fd;
-  --primary-certo: #021e02;
+  --primary-certo: #f3f3f4;
   --primary-incorreto: #f30e0e;
+  --color-main: #04506e;
 }
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: var(--bg-color);
+  background-image: url(../img/flag\ of\ England.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   color: var(--primary-color);
   min-height: 80vh;
   display: flex;
@@ -22,6 +26,13 @@ body {
   text-align: center;
   margin: 0;
   font-family: var(--font-family);
+}
+.principal {
+  margin-top: 5%;
+  padding: 40px;
+  border: solid rgb(236, 230, 230) 1px;
+  background: var(--color-main);
+  border-radius: 5%;
 }
 
 h1 {
@@ -53,11 +64,26 @@ span {
   padding: 30px;
 }
 .btn-jogar {
-  padding: 8px 15px;
+  padding: 40px 60px;
   border: 0;
   background: var(--primary-color);
   border-radius: 5px;
   margin-top: 20px;
+  font-size: 0.5em;
+  background-color: #f30e0e;
+  border-radius: 10%;
+  color: var(--primary-color);
+}
+.btn-Nova-frase {
+  padding: 40px 60px;
+  border: 0;
+  background: var(--primary-color);
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 1.5em;
+  background-color: #0b04ea;
+  border-radius: 10%;
+  color: var(--primary-color);
 }
 
 .box-pergunta {

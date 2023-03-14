@@ -3,14 +3,14 @@ const variasFrasesIngles = document.getElementById("variasFrasesIngles");
 const variasFrases = [];
 
 const teste = "teste1";
-const teste2 = "I speak English";
-const teste3 = "you speak English";
-const teste4 = "he speaks English";
-const teste5 = "she speaks English";
-const teste6 = "we speak English";
-const teste8 = "open the door";
-const teste7 = "they speak English";
-const teste9 = "I have a car";
+const teste2 = "I SPEAK ENGLISH";
+const teste3 = "YOU SPEAK ENGLISH";
+const teste4 = "HE SPEAKS ENGLISH";
+const teste5 = "SHE SPEAKS ENGLISH";
+const teste6 = "THEY SPEAK ENGLISH";
+const teste7 = "WE SPEAK ENGLISH";
+const teste8 = "I WAS THINKING ABOUT HAVING A TATTOO";
+const teste9 = "MANY CHILDREN TODAY SPEND HOURS IN FRONT OF A COMPUTER";
 
 variasFrases.push(
   teste,
@@ -28,7 +28,7 @@ function sortear(a, b) {
   return parseInt(Math.random() * (b - a) + 1);
 }
 
-resposta.innerHTML = ` <button id="variasFrasesIngles" class="btn-jogar">Nova Frase</button>`;
+resposta.innerHTML = ` <button id="variasFrasesIngles" class="btn-Nova-frase">Nova Frase</button>`;
 
 document.body.addEventListener("click", (e) => {
   if (e.target.id == "variasFrasesIngles") {
@@ -38,7 +38,8 @@ document.body.addEventListener("click", (e) => {
     variasFrasesIngles.innerHTML = `<span class="box-pergunta">${fraseEscolhida}<?span>`;
 
     const frase = fraseEscolhida;
-    console.log(fraseEscolhida);
+    // const fraSee = frase.toUpperCase();
+    // console.log(fraSee);
 
     const elementoChute = document.getElementById("chute");
     const resposta = document.getElementById("resposta");
@@ -53,8 +54,10 @@ document.body.addEventListener("click", (e) => {
 
     function onSpeak(e) {
       chute = e.results[0][0].transcript;
+      const chuTee = chute.toUpperCase();
+      console.log(chuTee);
 
-      if (frase === chute) {
+      if (frase === chuTee) {
         resposta.innerHTML = `<br><br><span class="box-resposta">Certa a Pronuncia<?span>
         
     <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>`;
