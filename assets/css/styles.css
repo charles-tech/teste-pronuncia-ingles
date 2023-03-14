@@ -61,12 +61,12 @@ span {
 }
 
 .box-pergunta {
-  font-size: 2em;
+  font-size: 1em;
   padding: 30px;
   color: var(--primary-color);
 }
 
-@media (max-width: 372px) {
+@media (max-width: 380px) {
   .box-resposta-incorreto {
     font-size: 15px;
     font-weight: bold;
@@ -76,9 +76,9 @@ span {
   }
 }
 
-@media (max-width: 372px) {
-  #variasFrasesIngles {
-    font-size: 20px;
+@media (max-width: 380px) {
+  .box-resposta {
+    font-size: 15px;
     display: flex;
     flex-wrap: wrap;
   }
