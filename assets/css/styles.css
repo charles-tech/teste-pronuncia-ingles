@@ -93,13 +93,33 @@ span {
   color: var(--primary-color);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 375px) {
   .box-resposta-incorreto {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 38, 0);
+  }
+}
+
+@media (max-width: 375px) {
+  .principal {
     font-size: 15px;
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    color: rgb(0, 255, 30);
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .textoPrincipal {
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
   }
 }
 
