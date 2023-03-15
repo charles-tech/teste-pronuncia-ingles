@@ -10,6 +10,7 @@ const frase5 = "THEY SPEAK ENGLISH";
 const frase6 = "WE SPEAK ENGLISH";
 const frase7 = "I WAS THINKING ABOUT HAVING A TATTOO";
 const frase8 = "MANY CHILDREN TODAY SPEND HOURS IN FRONT OF A COMPUTER";
+const frase9 = "A CHEAP CHIP ON THE SHEEP SHIP";
 
 variasFrases.push(
   frase1,
